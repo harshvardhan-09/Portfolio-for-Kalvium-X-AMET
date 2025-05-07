@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html> 
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>Memories</title>
+        <link rel="stylesheet" href="style.css">
+        <style>
+            .photo-container {
+                display: flex;
+                flex-direction: column;
+                align-items: center;
+            }
+            .photo-row {
+                display: flex;
+                justify-content: center;
+                gap: 20px;
+            }
+            .center {
+                justify-content: center;
+            }
+            .photo-row img {
+                max-width: 100%;
+                height: auto;
+            }
+        </style>
+    </head>
+    <body>
+        <header>
+            <div class="logo"></div>
+            <nav>
+                <a href="index.html">Home</a>
+                <a href="mentors.html">Mentors</a>
+                <a href="students.html" >Students</a>
+                <a href="memories.html" class="active">Memories</a>
+                <a href="project.html">Projects</a>
+                <a href="about.html">About</a>
+            </nav>
+        </header>
+        <div>
+            <h1><strong>Our Memories</strong></h1>
+        </div>
+        <div class="memo">
+            <div class="container">
+                <div class="row">
+                    <div class="section top-section">
+                        <img src="MEMORIES/14.jpg" alt="Orientation" height="400px" width="700px">
+                        <h2>Orientation</h2>
+                        <button onclick="window.location.href='viewmore.html'"><strong>View</strong></button>
+                    </div>
+                    <div class="section middle-section">
+                        <img src="MEMORIES/1.jpg" alt="groupphoto" height="400px" width="700px">                                                                                          
+                        <h2>Group photos</h2>
+                        <button onclick="window.location.href='groupphoto.html'"><strong>View</strong></button>
+                    </div>
+                </div>
+                <br>            
+                <div class="section bottom-section">
+                    <img src="MEMORIES/1.2.jpg" alt="cultural" height="400px" width="700px">
+                    <h2>Culturals</h2>
+                    <button onclick="window.location.href='cultural.html'"><strong>View</strong></button>
+                </div>
+            </div>        
+        </div>
+    </body>
+</html>

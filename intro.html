@@ -1,0 +1,157 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <meta name="description" content="Kalvium × AMET: Redefining engineering through real-world experience, continuous learning, and a bold vision for the future.">
+  <title>Kalvium × AMET</title>
+  <link href="https://fonts.googleapis.com/css2?family=Outfit:wght@300;600&display=swap" rel="stylesheet">
+  <style>
+    * {
+      margin: 0;
+      padding: 0;
+      box-sizing: border-box;
+    }
+
+    body {
+      height: 100vh;
+      background: linear-gradient(135deg, #b71c1c, #000000); /* Red and Black gradient */
+      background-size: 300% 300%;
+      animation: gradientShift 10s ease infinite;
+      font-family: 'Outfit', sans-serif;
+      display: flex;
+      flex-direction: column;
+      justify-content: center;
+      align-items: center;
+      color: #fff; /* White text to stand out against the dark background */
+      text-align: center;
+      overflow: hidden;
+    }
+
+    @keyframes gradientShift {
+      0% { background-position: 0% 50%; }
+      50% { background-position: 100% 50%; }
+      100% { background-position: 0% 50%; }
+    }
+
+    h1 {
+      font-size: 4rem;
+      font-weight: 600;
+      margin-bottom: 10px;
+      letter-spacing: 2px;
+      animation: fadeSlide 1.5s ease forwards;
+      opacity: 0;
+    }
+
+    .tagline {
+      font-size: 1.2rem;
+      color: #e94560; /* Red for the tagline */
+      margin-bottom: 20px;
+      animation: glowText 3s ease-in-out infinite alternate;
+    }
+
+    p {
+      font-size: 1.3rem;
+      font-weight: 300;
+      max-width: 650px;
+      margin-top: 10px;
+      opacity: 0;
+      animation: fadeSlide 2.5s ease forwards;
+      animation-delay: 0.5s;
+    }
+
+    .cta-button {
+      margin-top: 40px;
+      padding: 14px 32px;
+      font-size: 1.1rem;
+      border: none;
+      background-color: #e94560; /* Red button */
+      color: white;
+      border-radius: 30px;
+      text-decoration: none;
+      font-weight: 600;
+      transition: all 0.3s ease;
+      animation: fadeSlide 3.2s ease forwards;
+      opacity: 0;
+    }
+
+    .cta-button:hover {
+      background-color: #ff2e63;
+      transform: scale(1.1); /* Slightly larger on hover */
+      box-shadow: 0 4px 12px rgba(0, 0, 0, 0.3);
+    }
+
+    @keyframes fadeSlide {
+      from {
+        opacity: 0;
+        transform: translateY(30px);
+      }
+      to {
+        opacity: 1;
+        transform: translateY(0);
+      }
+    }
+
+    @keyframes glowText {
+      from {
+        text-shadow: 0 0 5px #e94560, 0 0 10px #e94560;
+      }
+      to {
+        text-shadow: 0 0 15px #ff2e63, 0 0 30px #ff2e63;
+      }
+    }
+
+    /* Floating circles for subtle decoration */
+    .circle {
+      position: absolute;
+      border-radius: 50%;
+      opacity: 0.08;
+      animation: float 20s ease-in-out infinite;
+      background: #fff;
+    }
+
+    .circle:nth-child(1) {
+      width: 120px;
+      height: 120px;
+      top: 10%;
+      left: 15%;
+    }
+
+    .circle:nth-child(2) {
+      width: 80px;
+      height: 80px;
+      bottom: 15%;
+      right: 10%;
+      animation-delay: 3s;
+    }
+
+    .circle:nth-child(3) {
+      width: 60px;
+      height: 60px;
+      top: 60%;
+      left: 75%;
+      animation-delay: 5s;
+    }
+
+    @keyframes float {
+      0%, 100% {
+        transform: translateY(0) rotate(0deg);
+      }
+      50% {
+        transform: translateY(-20px) rotate(180deg);
+      }
+    }
+  </style>
+</head>
+<body>
+  <div class="circle"></div>
+  <div class="circle"></div>
+  <div class="circle"></div>
+
+  <h1>Kalvium × AMET</h1>
+  <div class="tagline">Where Innovation Meets Education</div>
+  <p>Redefining engineering through real-world experience, continuous learning, and a bold vision for the future.</p>
+
+  <a href="index.html" class="cta-button">Join Us</a>
+</body>
+</html>

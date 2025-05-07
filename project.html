@@ -1,0 +1,107 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Projects</title>
+  <link rel="stylesheet" href="style.css" />
+</head>
+<body>
+  <header>
+    <div class="header-logo"></div>
+    <nav>
+      <a href="index.html">Home</a>
+      <a href="mentors.html">Mentors</a>
+      <a href="students.html">Students</a>
+      <a href="memories.html">Memories</a>
+      <a href="projects.html" class="active">Projects</a>
+      <a href="about.html">About</a>
+    </nav>
+  </header>
+
+  <section class="projects-section">
+    <h2>Our Projects</h2>
+
+      <div class="project-card" onclick="window.location.href='pixel.html'">
+        <h3>Pixel Art Creator</h3>
+        <p>Draw and save pixel art with custom grid size.</p>
+      </div>
+    </div>
+
+    <div class="project-card" onclick="window.location.href='Chatbox.html' ">
+        <h3>Chatbox</h3>
+        <p>Chatbox for your help.</p>
+      </div>
+    </div>
+  </section>
+</body>
+</html>
+<style>
+
+    .projects-section {
+      padding: 60px 20px;
+      text-align: center;
+    }
+
+    .projects-section h2 {
+      font-size: 2.2rem;
+      color: #ff3c3c;
+      margin-bottom: 40px;
+    }
+
+    .project-container {
+      display: flex;
+      flex-wrap: wrap;
+      justify-content: center;
+      gap: 40px;
+    }
+
+    .project-card {
+      background-color: rgba(255, 255, 255, 0.05);
+      border: 1px solid #ff3c3c;
+      border-radius: 16px;
+      padding: 25px;
+      width: 270px;
+      box-shadow: 0 0 10px rgba(255, 60, 60, 0.4);
+      transition: transform 0.3s ease, box-shadow 0.3s ease;
+      cursor: pointer;
+      opacity: 0;
+      transform: translateY(30px);
+      animation: fadeInUp 0.6s forwards;
+    }
+
+    .project-card:nth-child(1) {
+      animation-delay: 0.2s;
+    }
+
+    .project-card:nth-child(2) {
+      animation-delay: 0.4s;
+    }
+
+    .project-card:nth-child(3) {
+      animation-delay: 0.6s;
+    }
+
+    .project-card:hover {
+      transform: translateY(-8px);
+      box-shadow: 0 0 20px rgba(255, 60, 60, 0.6);
+    }
+
+    .project-card h3 {
+      font-size: 1.5rem;
+      color: #ff3c3c;
+      margin-bottom: 10px;
+    }
+
+    .project-card p {
+      font-size: 1rem;
+      color: #dddddd;
+    }
+
+    @keyframes fadeInUp {
+      to {
+        opacity: 1;
+        transform: translateY(0);
+      }
+    }
+  </style>
